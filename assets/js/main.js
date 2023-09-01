@@ -259,4 +259,15 @@
    */
   new PureCounter();
 
+
+  const form = document.querySelector('.php-email-form');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+
+    form.reset();
+  });
+
+
 })()
