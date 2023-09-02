@@ -261,12 +261,16 @@
 
 
   const form = document.querySelector('.php-email-form');
+  const success = document.querySelector('.sent-message');
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    success.style.display = "block";
 
     form.reset();
+
+
   });
 
 
